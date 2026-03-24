@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNotes } from "../context/NotesContext";
-import "./NotesList.css";
+import "./NoteList.css";
 
 const NotesList = () => {
   const {
@@ -44,7 +44,7 @@ const NotesList = () => {
       <input
         className="search-bar"
         type="text"
-        placeholder="Search notes..."
+        placeholder="Search notes here..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />

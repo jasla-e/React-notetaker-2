@@ -21,6 +21,7 @@ const NotesList = () => {
   if (loading) return <div className="spinner"></div>;
 
   const filteredNotes = query ? searchNotes(query) : notes;
+  
 
   const activeNotes = filteredNotes.filter((note) => !note.archived);
   const archivedNotes = filteredNotes.filter((note) => note.archived);

@@ -2,7 +2,7 @@ import { createContext,useState,useEffect,useContext } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const API_URL="https://react-notetaker-2.onrender.com";
+const API_URL="https://react-notetaker-2.onrender.com/notes";
 
 const NotesContext =createContext();
 
@@ -19,6 +19,7 @@ const getNotes=async ()=>{
     setLoading(true);
     try{
         const res=await axios.get(API_URL);
+        // console.log(res.data)
         setNotes(res.data);
     }catch{
         setError("Failed to get notes");

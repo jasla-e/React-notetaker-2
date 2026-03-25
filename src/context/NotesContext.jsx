@@ -2,7 +2,7 @@ import { createContext,useState,useEffect,useContext } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const API_URL="http://localhost:4000/notes";
+const API_URL="https://react-notetaker-2.onrender.com";
 
 const NotesContext =createContext();
 

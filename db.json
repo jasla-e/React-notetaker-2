@@ -1,12 +1,14 @@
 {
   "notes": [
     {
+      "id": "1",
       "title": "Team Meeting",
       "content": "Discuss Q1 roadmap and deadlines...",
-      "updatedAt": "2026-03-24T10:05:10.273Z",
-      "id": "1",
-      "archived": false
+      "color": "yellow",
+      "tags": ["work"],
+      "archived": false,
+      "createdAt": "2026-03-24T11:33:03.439Z",
+      "updatedAt": "2026-03-24T11:33:03.439Z"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
